@@ -10,9 +10,10 @@ int remove(int *arr, int sz)
 {
 	int i = 0;
 	int index = 0;
-
+	if(numsSize == 0)
+		return 0;
 	for (i = 1; i < sz; i++) {
-		if (arr[index] != arr[i]) {	//ÒÀ´ÎÏòºóÕÒ²»µÈµÄ£¬°¤¸öÅÅÁÐ
+		if (arr[index] != arr[i]) {	//ä¾æ¬¡å‘åŽæ‰¾ä¸ç­‰çš„ï¼ŒæŒ¨ä¸ªæŽ’åˆ—
 			arr[++index] = arr[i];
 		}
 	}
