@@ -25,9 +25,9 @@ int* plusOne(int* digits, int digitsSize, int* returnSize)
 	for (i = 0; i < digitsSize; i++)										
 	{
 		digits[digitsSize - i - 1] = (digits[digitsSize - i - 1] + num) % 10;
-		if ((digits[digitsSize - i - 1] + num) < 10)							//没有进位
+		if ((digits[digitsSize - i - 1] + num) < 10)							//娌℃湁杩涗綅
 			break;
-		else																	//有进位
+		else																	//脫脨陆酶脦禄
 			num = (digits[digitsSize - i - 1] + num) % 10;
 	}
 	if (i < digitsSize && num != 0)												
