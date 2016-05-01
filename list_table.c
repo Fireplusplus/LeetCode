@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 struct Node
 {
@@ -32,7 +31,7 @@ void AddToTail(PNODE *pHead, int val)
 }
 
 
-void RemoveNOde(PNODE *pHead, int val)
+void RemoveNode(PNODE *pHead, int val)
 {
 	PNODE p = NULL;
 	if ((NULL == pHead) || (NULL == *pHead))
@@ -64,13 +63,4 @@ void RemoveNOde(PNODE *pHead, int val)
 		p = NULL;
 	}
 	
-}
-
-int main()
-{
-
-
-
-
-	return 0;
 }
