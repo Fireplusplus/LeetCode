@@ -15,12 +15,6 @@
  * 最后将各个位置的糖果数累加起来就可以了。
  */
 
-bool lessmark(int e1, int e2)
-{
-	return e1 < e2;
-}
-
-
 class Solution
 {
 public:
